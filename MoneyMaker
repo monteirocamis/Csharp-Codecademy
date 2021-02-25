@@ -1,0 +1,36 @@
+using System;
+
+namespace MoneyMaker
+{
+  class MainClass
+  {
+    public static void Main(string[] args)
+    {
+      Console.WriteLine("Welcome to Money Maker!");
+ /*In this project you’ll use C# to build a Money Maker: a program in which a user enters an amount and gets the minimum number of coins that equal that value. */
+Console.WriteLine("Enter an amount to convert to coins:");
+//armazena o numero escrito na var
+string amount = Console.ReadLine();
+
+//convert to double
+ Convert.ToDouble(amount);
+Console.Write($"{amount} cents is equal to ...");
+
+double gold = 10;
+string silver = "A silver coin is worth 5 cents";
+
+//Console.Write($"{gold} {silver} ");
+
+//Divide the amount by the value of a gold coin
+//Round down to the nearest integer
+// Store the result in a double variable called goldCoins
+double division = amount/10  ;
+Console.Write(division );
+
+  //double goldCoind = Math.Floor(Decimal(amount / 10 )) ;
+
+
+
+    }
+  }
+}
