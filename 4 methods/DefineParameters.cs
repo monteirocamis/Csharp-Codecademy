@@ -9,7 +9,7 @@ namespace DefineParameters
       VisitPlanets(3);
       VisitPlanets(3);
       VisitPlanets(3);
-   
+   //numberOfPlanets(); 
     }
     
     static void VisitPlanets(int numberOfPlanets)
