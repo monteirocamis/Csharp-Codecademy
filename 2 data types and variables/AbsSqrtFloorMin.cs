@@ -21,7 +21,6 @@ namespace LowestNumber
   return ;
 
       // Print the lowest number
-
   Console.WriteLine( Math.Min(numberOneSqrt, numberTwoSqrt));
     }
   }
