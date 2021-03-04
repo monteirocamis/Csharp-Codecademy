@@ -35,3 +35,33 @@ namespace OutParameters
     }    
 	}
 }
+
+
+//outros exemplos:
+static string Yell(string phrase, out bool wasYellCalled)
+{
+  wasYellCalled = true;
+  return phrase.ToUpper();
+}
+
+// eusing System;
+
+namespace UsingOut
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+   
+      string grito = "GARRRR";
+			string murmur = Whisper(grito, out bool marker);
+      Console.WriteLine(murmur);
+    }    
+      static string Whisper(string phrase, out bool buleana)
+      {
+        buleana = true;
+    return phrase.ToLower();
+      }
+  
+	}
+}
